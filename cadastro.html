@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title> 
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Loja Mística</a>
+   
+        <nav class="navbar">
+            <a href="mercado.html">Início</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="login.html">Login</a>
+            <a href="inicio.html">ADM</a>
+        </nav>
+    </header>
+    <div style="display: block; background-color: #eee;" id="informacoes"></div>
+ 
+    <section
+    style="display: flex; width: 50vh; flex-direction: column; background-color: blueviolet; margin-left: 40%; margin-top: 30vh;  border-radius: 20px; justify-content: center; align-items: center; gap: 1rem">
+        <div>
+            <h1 style="color: aliceblue;">Cadastro</h1>
+        </div>
+    <div>
+        <input type="text" id="name" placeholder="Nome">
+    </div>
+    <div>
+        <input type="text" id="email" placeholder="Email">
+    </div>
+    <div>
+        <input type="text" id="password" placeholder="Senha">
+    </div>
+    <div>
+        <button onclick="cadastrar(event)">Cadastrar</button>
+    </div>
+    <div>
+        <button><a href="login.html">Já possui cadastro? Login</a></button>
+    </div>
+    </section>
+
+    <footer style="position: fixed; height: 40px;">
+        <p>&copy; 2024 Seu Nome. Todos os direitos reservados.</p>
+             <ul>
+                 <li><a href="#">Sobre</a></li>
+                 <li><a href="#">Contato</a></li>
+                 <li><a href="#">Política de Privacidade</a></li>
+             </ul>
+         </footer>
+
+<script src="cadastro.js"></script>
+</body>
+</html>

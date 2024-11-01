@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mercado.css">
+    <title>Loja de teste</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Loja Mística</a>
+   
+        <nav class="navbar">
+            <a href="mercado.html">Início</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="login.html">Login</a>
+            <a href="inicio.html">ADM</a>
+        </nav>
+    </header>
+    
+      
+    <div class="card" id="produto1" style="margin-top: 30%;">
+        <img src="../assets/lapis.jpg">
+        <div>
+            <h1>Lápis Poderoso</h1>
+            <h2>Traz vida aos desenhos</h2>
+            <span>R$9,99</span>
+            <p class="editar-produto" id="produto-card1" style="background-color: antiquewhite;width: 100%; cursor: pointer; background-color: chocolate;">Editar Produto</p>
+        </div>
+    </div>
+    <div class="card" id="produto2" style="margin-top: 30%;">
+        <img src="../assets/vassoura.jpg">
+        <div>
+            <h1>Vassoura Voadora</h1>
+            <h2>Igual vassoura de bruxa</h2>
+            <span>R$99,99</span>
+            <p class="editar-produto" id="produto-card2" style="background-color: antiquewhite;width: 100%; cursor: pointer; background-color: chocolate;">Editar Produto</p>
+        </div>
+    </div>
+    <div class="card" id="produto3" style="margin-top: 30%;">
+        <img src="../assets/cartola.jpg">
+        <div>
+            <h1>Cartola de Oz</h1>
+            <h2>Toda a magia de Oz na sua mão</h2>
+            <span>R$22,17</span>
+            <p class="editar-produto" id="produto-card3" style="background-color: antiquewhite;width: 100%; cursor: pointer; background-color: chocolate;">Editar Produto</p>
+        </div>
+    </div>
+ 
+    <div class="card" id="produto4">
+        <img src="../assets/tapete.jpg">
+        <div>
+            <h1>Tapete do Aladin</h1>
+            <h2>Um mundo idealllll</h2>
+            <span>R$59,99</span>
+            <p class="editar-produto" id="produto-card4" style="background-color: antiquewhite;width: 100%; cursor: pointer; background-color: chocolate;">Editar Produto</p>
+        </div>
+    </div>
+    <div class="card" id="produto5">
+        <img src="../assets/jordan.jpg">
+        <div>
+            <h1>Tênis Jordan</h1>
+            <h2>Ande pelo ar com eles</h2>
+            <span>R$249,99</span>
+            <p class="editar-produto" id="produto-card5" style="background-color: antiquewhite;width: 100%; cursor: pointer; background-color: chocolate;">Editar Produto</p>
+        </div>
+    </div>
+    <div class="card" id="produto6">
+        <img src="../assets/poçao.jpg">
+        <div>
+            <h1>Poção Ivisibilidade</h1>
+            <h2>Use ela para o bem!</h2>
+            <span>R$329,99</span>
+            <p class="editar-produto" id="produto-card6" style="background-color: antiquewhite;width: 100%; cursor: pointer; background-color: chocolate;">Editar Produto</p>
+        </div>
+    </div>
+    <div class="card" id="produto7">
+        <img src="../assets/portal.jpg">
+        <div>
+            <h1>Portal Futuro</h1>
+            <h2>Nunca foi testado antes...</h2>
+            <span>R$149,99</span>
+            <p class="editar-produto" id="produto-card7" style="background-color: antiquewhite;width: 100%; cursor: pointer; background-color: chocolate;">Editar Produto</p>
+        </div>
+    </div>
+    <div class="card" id="produto8">
+        <img src="../assets/bola.jpg">
+        <div>
+            <h1>Bola Mágica</h1>
+            <h2>Se torne o craque da sua rua</h2>
+            <span> R$19,99</span>
+            <p class="editar-produto" id="produto-card8" style="background-color: antiquewhite;width: 100%; cursor: pointer; background-color: chocolate;">Editar Produto</p>
+        </div>
+    </div>
+    <div class="card" id="produto9">
+        <img src="../assets/espada.jpg">
+        <div>
+            <h1>Scalibur</h1>
+            <h2>A espada mais épica de todas</h2>
+            <span>R$80,49</span>
+            <p class="editar-produto" id="produto-card9" style="background-color: antiquewhite;width: 100%; cursor: pointer; background-color: chocolate;">Editar Produto</p>
+        </div>
+    </div>
+    <button id="Cmore"><a href="./carrinho.html">Ver carrinho</a></button> 
+   <script src="./mercado.js"></script>
+</body>
+</html>
+    <br><br>
+ 
+    <div class="popup" style ="
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 20px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow : auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0, 0.4);" id = "editar_produto">
+    <form style="background-color: #fefefe;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 50%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;">
+        <!-- MODAL -->
+        <h2>Editar Produto</h2>
+        <input type="hidden" id="id_produto" value="" placeholder="Id do produto"><br>
+        <input type="text" id="editar_titulo" value="" placeholder="Título do produto"><br>
+        <input type="text" id="editar_preco" value="" placeholder="Preço do produto"><br>
+        <img src="" alt="" id="imagem_produto" width="50px" height="50px">
+        <input type="file" id="editar_imagem"><br>
+        <button id="atualizar-produto">Atualizar</button>
+        <p class="button-sair" style="background-color: antiquewhite; cursor: pointer;">Sair</p>
+    </form></div>
+
+    <footer style="position: fixed; height: 40px;">
+        <p>&copy; 2024 Seu Nome. Todos os direitos reservados.</p>
+             <ul>
+                 <li><a href="#">Sobre</a></li>
+                 <li><a href="#">Contato</a></li>
+                 <li><a href="#">Política de Privacidade</a></li>
+             </ul>
+         </footer>
+
+    
+ 
+<script src="inicio.js"></script>
+</body>
+</html>

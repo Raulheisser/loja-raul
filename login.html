@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+ 
+ </head>
+ <body>
+    <header class="header">
+        <a href="#" class="logo">Loja Mística</a>
+   
+        <nav class="navbar">
+            <a href="mercado.html">Início</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="login.html">Login</a>
+            <a href="inicio.html">ADM</a>
+        </nav>
+    </header>
+    <br><br><br>
+
+    <section id="login"
+        style="display: flex; background-color: blueviolet;flex-direction: column; border-radius: 20px; width: 30% ;margin-top: 10%; margin-left: 35% ;justify-content: center; align-items: center; gap: 1rem">
+       
+        <div class="Login">
+           <div>    
+               <h1 style="color: aliceblue;">Login</h1>
+           </div>
+           <div>
+               <input type="text" id="email_login" placeholder="Email" style="border-radius: 10px;">
+           </div>
+           <br>
+           <div>
+               <input type="text" id="password_login" placeholder="Senha" style="border-radius: 10px">
+           </div>
+           <br>
+           <div>
+               <button onclick="logar(Event)" style="border-radius: 10px">Logar</button>
+           </div>
+           <br>
+           <div>
+               <button onclick="logout(event)" style="border-radius: 10px">Sair</button>
+           </div>
+           <br>
+           <div>
+            <button><a href="cadastro.html">Não possui cadastro? Cadastre-se</a></button>
+           </div>
+        </div>
+    </section>
+
+    <footer style="position: fixed; height: 40px;">
+        <p>&copy; 2024 Seu Nome. Todos os direitos reservados.</p>
+             <ul>
+                 <li><a href="#">Sobre</a></li>
+                 <li><a href="#">Contato</a></li>
+                 <li><a href="#">Política de Privacidade</a></li>
+             </ul>
+         </footer>
+    
+
+<script src="login.js"></script>
+ </body>
+ </html>
